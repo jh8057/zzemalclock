@@ -10,13 +10,21 @@
 import MainClockHour from "./MainClockHour.vue";
 import MainClockMin from "./MainClockMin.vue";
 import MainClockSec from "./MainClockSec.vue";
+import { useDateStore } from "../stores/date";
+import { onMounted } from "vue";
+
+const dateStore = useDateStore();
+const { updateDate } = dateStore;
+onMounted(() => {
+  updateDate;
+});
 </script>
 
 <style scoped>
 .clock__wrapper {
   background: skyblue;
-  width: 500px;
-  height: 500px;
+  width: var(--radiusSize);
+  height: var(--radiusSize);
   display: flex;
   justify-content: center;
   text-align: center;
