@@ -11,7 +11,7 @@ const { dateMin } = storeToRefs(dateStore);
 
 const clockMinStyle = computed(() => {
   return {
-    transform: `translate(-50%, 0) rotate(${dateMin.value * 0.5}deg)`,
+    transform: `translate(-50%, 0) rotate(${dateMin.value * 6}deg)`,
   };
 });
 </script>

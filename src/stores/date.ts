@@ -8,7 +8,6 @@ export const useDateStore = defineStore("date", () => {
   const dateSec = computed(() => date.value.getSeconds());
 
   const updateDate = setInterval(() => {
-    console.log("data", date.value, dateSec.value);
     date.value = new Date();
   }, 1000);
 
