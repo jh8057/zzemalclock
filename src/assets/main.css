@@ -1,5 +1,11 @@
 :root{
-    --radiusSize : 500px;
+    --radiusSize : 450px;
     --darkBlue : #0054c6;
     --lightBlue : #a9d8f3;
 }
+
+@media (max-width: 500px) {
+    :root{
+        --radiusSize : 200px;
+    }
+} 

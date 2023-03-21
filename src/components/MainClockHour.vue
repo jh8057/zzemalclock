@@ -21,12 +21,19 @@ const clockHourStyle = computed(() => {
 <style scoped>
 .clock__hour {
   width: 5px;
-  height: calc(var(--radiusSize) / 2);
+  height: calc(var(--radiusSize) / 4);
   position: absolute;
   left: 50%;
+  top: 240px;
   background: black;
   transform-origin: bottom;
   /* transform: translate(-50%, 0) rotate(0deg); */
   z-index: 1;
+}
+
+@media (max-width: 500px) {
+  .clock__hour {
+    top: 177px;
+  }
 }
 </style>
